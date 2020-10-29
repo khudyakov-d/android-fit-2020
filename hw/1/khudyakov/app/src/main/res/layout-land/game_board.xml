@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/first_player_avatar_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/player_avatar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/first_player_score"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:background="@color/text_view_color"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <GridView
+            android:id="@+id/game_board"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:numColumns="3"
+            tools:listitem="@layout/board_item"
+            android:layout_marginHorizontal="10dp"
+        />
+
+        <TextView
+            android:id="@+id/current_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <ImageView
+            android:id="@+id/second_player_avatar_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/player_avatar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/second_player_score"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:background="@color/text_view_color"/>
+
+        <Button
+            android:id="@+id/new_game"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:text="@string/new_game" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

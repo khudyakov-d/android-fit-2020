@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">tic_tok_toe</string>
+    <string name="new_game" >New game</string>
+    <string name="score" >Score</string>
+    <string name="create_player">Create player</string>
+    <string name="select_first_player">Select first player</string>
+    <string name="select_second_player">Select second player</string>
+    <string name="player_avatar">Player\'s avatar</string>
+    <string name="player_nickname">Your nickname</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="upload_button">Upload</string>
+    <string name="select_player">Select player</string>
+    <string name="player_creation_error">Please enter nickname</string>
+    <string name="image_selection_error">Can\'t upload picture</string>
+    <string name="players_selection_error">Please select different players</string>
+    <string name="player_turn">Player\'s turn %s</string>
+</resources>
